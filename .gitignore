@@ -73,3 +73,23 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+### UnrealEngine Patch ###
+# Don't ignore icon and splash images for mobile app
+!Build/IOS/Resources/
+Build/IOS/Resources/*
+!Build/IOS/Resources/Graphics/
+Build/IOS/Resources/Graphics/*
+!Build/IOS/Resources/Graphics/*.png
+
+!Build/Android/res/
+Build/Android/res/*
+!Build/Android/res/*/
+Build/Android/res/*/*
+!Build/Android/res/*/*.png
+
+# Keep some build outputs
+!Build/**/*
+!Build_5/**/*
+!Build_5/**/*.dll
+!Build_5/**/*.exe
